@@ -6,6 +6,16 @@
 
 原主题地址：[https://github.com/imzeuk/hugo-theme-zozo](https://github.com/imzeuk/hugo-theme-zozo)
 
+## 补充说明
+
+该主题fork自[https://github.com/halo-dev/halo-theme-zozo](https://github.com/halo-dev/halo-theme-zozo)，是基于该主题进行开发（魔改），需求如下。
+
+- [ ] 检查所有模版并修复格式
+- [ ] 添加日志页面的模版
+- [ ] 添加footer的统计功能与IPC备案格式和Copyright
+- [ ] 开发更多自定义功能
+- [ ] ...
+
 ## 预览截图
 
 ![index](https://i.loli.net/2019/09/19/6TQ3ehzraHUmGwn.png)
@@ -14,7 +24,7 @@
 
 ## 预览地址
 
-[https://zeuk.me](https://zeuk.me)
+[https://blog.return76.top](https://blog.return76.top)
 
 ## 安装方法
 
