@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
 <#include "layouts/partials/head.ftl">
 <@head title="友情链接 · ${blog_title!}" canonical="${links_url!}" />
 <body>

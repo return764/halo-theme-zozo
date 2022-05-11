@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
 <#include "layouts/partials/head.ftl">
 <@head title="归档 · ${blog_title!}" canonical="${archives_url!}" />
 <body>

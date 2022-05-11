@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
 <#include "layouts/partials/head.ftl">
 <@head title="分类 · ${blog_title!}" canonical="${categories_url!}" />
 <body>

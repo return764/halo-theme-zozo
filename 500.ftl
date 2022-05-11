@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
 <#include "layouts/partials/head.ftl">
 <@head title="500 Internal Error · ${blog_title!}" canonical="${blog_url!}/500" />
 <body>

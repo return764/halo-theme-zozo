@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
 <#include "layouts/partials/head.ftl">
 <@head title="404 Page not found · ${blog_title!}" canonical="${blog_url!}/404" />
 <body>

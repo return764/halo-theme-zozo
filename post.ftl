@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
 <#include "layouts/partials/head.ftl">
 <@head title="${post.title!} · ${blog_title!}" canonical="${post.fullPath!}" />
 <body>
