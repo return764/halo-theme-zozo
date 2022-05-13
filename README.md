@@ -10,8 +10,8 @@
 
 该主题fork自[https://github.com/halo-dev/halo-theme-zozo](https://github.com/halo-dev/halo-theme-zozo)，是基于该主题进行开发（魔改），需求如下。
 
-- [ ] 检查所有模版并修复格式
-- [ ] 添加日志页面的模版
+- [x] 检查所有模版并修复格式
+- [x] 添加日志页面的模版
 - [ ] 添加footer的统计功能与IPC备案格式和Copyright
 - [ ] 开发更多自定义功能
 - [ ] ...
