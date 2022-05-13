@@ -6,7 +6,7 @@
 <div class="main animated">
     <#include "layouts/partials/nav.ftl">
     <#include "layouts/partials/header.ftl">
-    <div class="journal-wrap" id="wrpper-container">
+    <div class="content" id="wrpper-container">
         <#list journals.content as journal>
             <section class="journal animated fadeInDown">
                 <div class="journal-left">
