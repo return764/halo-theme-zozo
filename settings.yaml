@@ -37,6 +37,13 @@ general:
       name: custom_css
       label: 自定义样式
       type: textarea
+advanced:
+  label: 高级设置
+  items:
+    beian:
+      name: beian
+      label: 备案号
+      type: text
 sns:
   label: 社交资料
   items:
