@@ -63,6 +63,7 @@ hr {
   box-shadow: 0 10px 20px 0 rgba(236, 236, 236, 0.86);
   width: 800px;
   margin: 60px auto 0;
+  min-height: 72vh;
 }
 
 .content {
@@ -354,6 +355,72 @@ hr {
   }
 }
 
+.journal-wrap {
+  width: 720px;
+  margin: 0 auto;
+
+}
+
+.journal {
+  display: flex;
+  overflow: hidden;
+  color: #333333;
+
+  &:last-of-type{
+    padding-bottom: 30px;
+  }
+
+  .journal-left {
+    position: relative;
+    width: 50px;
+    flex-shrink: 0;
+  }
+
+  .journal-left::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: calc(100% - 12px);
+    background: #333333;
+    left: 50%;
+    top: 20px;
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  .journal-left .journal-node {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    border: #333333 2px solid;
+    margin: 3px 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  .journal-right {
+    flex-grow: 1;
+    padding-bottom: 20px;
+  }
+
+  .journal-right .journal-date {
+    font-family: 'stick';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding-bottom: .5rem;
+    margin-bottom: .2rem;
+    border-bottom: 1px solid #F3F3F3;
+  }
+
+  .journal-content {
+    line-height: 2em;
+    letter-spacing: .2px;
+    word-wrap: break-word;
+  }
+}
+
 /*for archive*/
 
 .list_with_title {
@@ -406,13 +473,17 @@ hr {
   color: #666666;
   font-size: 14px;
 
-  a {
+  a,span {
     color: #888888;
     text-decoration: none;
 
     &:hover {
       color: #333333;
     }
+  }
+
+  span.more_btn {
+    cursor: pointer;
   }
 
   .pre {
@@ -725,3 +796,10 @@ a.back_to_top {
 }
 
 /*animation ends*/
+
+/*other font*/
+
+@font-face {
+  font-family: stick;
+  src: url("../font/Stick-Regular.ttf");
+}

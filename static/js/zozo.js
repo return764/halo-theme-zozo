@@ -1,8 +1,7 @@
 'use strict';
 
-// back-to-top
-$(document).ready((function (_this) {
-  return function () {
+const context = {
+  back_to_top: function () {
     let bt
     bt = $('#back_to_top')
     if ($(document).width() > 480) {
@@ -22,17 +21,38 @@ $(document).ready((function (_this) {
         return false
       })
     }
-  }
-})(this))
-
-// nav-toggle
-$(document).ready((function (_this) {
-  return function () {
+  },
+  nav_toggle: function() {
     let nav,icon
     icon = $('#menu_icon')
     nav = $('#site_nav')
     icon.click(function () {
       nav.slideToggle(250)
     })
+  },
+  load_more: function() {
+    $('.more_btn').click(function(e) {
+      let next_url = e.target.dataset.url
+      let wrap_container = "#wrpper-container"
+      let pagination = "#pagination"
+      $.ajax({
+        type: "GET",
+        url: next_url,
+        success(data) {
+          $(pagination).remove();
+          let next_page = $(data).find(wrap_container)
+          $(wrap_container).append(next_page.children())
+          context.load_more()
+        },
+        error() {
+          context.load_more()
+        }
+      })
+    })
   }
-})(this))
+
+}
+
+$(document).ready(function() {
+  Object.values(context).forEach(f => f())
+})
